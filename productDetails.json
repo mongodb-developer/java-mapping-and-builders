@@ -1,0 +1,250 @@
+[
+  {
+    "_id": {"$oid": "66cc68309ff045b1b411b6ba"},
+    "productName": "Wireless Mouse",
+    "category": "Electronics",
+    "price": 29.99,
+    "stock": 150,
+    "description": "Ergonomic wireless mouse with adjustable DPI settings.",
+    "brand": "TechBrand",
+    "images": [
+      {
+        "url": "https://example.com/images/wireless_mouse_1.jpg",
+        "altText": "Wireless Mouse Top View"
+      },
+      {
+        "url": "https://example.com/images/wireless_mouse_2.jpg",
+        "altText": "Wireless Mouse Side View"
+      }
+    ],
+    "features": "2.4 GHz wireless connectivity, Adjustable DPI from 800 to 1600, Compatible with Windows and macOS",
+    "reviews": [
+      {
+        "customerId": {"$oid": "66cc67443921db64869bcf3d"},
+        "rating": 4.5,
+        "comment": "Great mouse, very comfortable to use!",
+        "date": "2023-03-01T08:45:00Z"
+      }
+    ]
+  },
+  {
+    "_id": {"$oid": "66cc68309ff045b1b411b6bb"},
+    "productName": "Bluetooth Headphones",
+    "category": "Electronics",
+    "price": 59.99,
+    "stock": 75,
+    "description": "Noise-cancelling Bluetooth headphones with long battery life.",
+    "brand": "SoundWave",
+    "images": [
+      {
+        "url": "https://example.com/images/bluetooth_headphones_1.jpg",
+        "altText": "Bluetooth Headphones Front View"
+      },
+      {
+        "url": "https://example.com/images/bluetooth_headphones_2.jpg",
+        "altText": "Bluetooth Headphones Side View"
+      }
+    ],
+    "features": "Active noise cancellation, Up to 20 hours of battery life, Bluetooth 5.0 connectivity",
+    "reviews": [
+      {
+        "customerId": {"$oid": "66cc67443921db64869bcf3e"},
+        "rating": 5,
+        "comment": "Amazing sound quality and comfort!",
+        "date": "2023-03-10T14:00:00Z"
+      }
+    ]
+  },
+  {
+    "_id": {"$oid": "66cc68309ff045b1b411b6bc"},
+    "productName": "Smartphone Stand",
+    "category": "Accessories",
+    "price": 15.99,
+    "stock": 200,
+    "description": "Adjustable smartphone stand compatible with all phone models.",
+    "brand": "MobileGear",
+    "images": [
+      {
+        "url": "https://example.com/images/smartphone_stand_1.jpg",
+        "altText": "Smartphone Stand"
+      }
+    ],
+    "features": "360-degree rotation, Non-slip base, Compact and portable",
+    "reviews": [
+      {
+        "customerId": {"$oid": "66cc67443921db64869bcf3d"},
+        "rating": 4,
+        "comment": "Sturdy and does the job.",
+        "date": "2023-03-12T10:15:00Z"
+      }
+    ]
+  },
+  {
+    "_id": {"$oid": "66cc68309ff045b1b411b6bd"},
+    "productName": "4K Ultra HD TV",
+    "category": "Electronics",
+    "price": 499.99,
+    "stock": 30,
+    "description": "55-inch 4K Ultra HD Smart TV with HDR and streaming capabilities.",
+    "brand": "VisionX",
+    "images": [
+      {
+        "url": "https://example.com/images/4k_tv_1.jpg",
+        "altText": "4K Ultra HD TV"
+      }
+    ],
+    "features": "4K Ultra HD resolution, HDR10 support, Built-in streaming apps",
+    "reviews": [
+      {
+        "customerId": {"$oid": "66cc67443921db64869bcf3f"},
+        "rating": 4.7,
+        "comment": "Stunning picture quality!",
+        "date": "2023-03-18T14:25:00Z"
+      }
+    ]
+  },
+  {
+    "_id": {"$oid": "66cc68309ff045b1b411b6be"},
+    "productName": "Gaming Keyboard",
+    "category": "Electronics",
+    "price": 79.99,
+    "stock": 100,
+    "description": "Mechanical gaming keyboard with RGB lighting and customizable keys.",
+    "brand": "GamerPro",
+    "images": [
+      {
+        "url": "https://example.com/images/gaming_keyboard_1.jpg",
+        "altText": "Gaming Keyboard"
+      }
+    ],
+    "features": "Mechanical switches, RGB backlighting, Programmable keys",
+    "reviews": [
+      {
+        "customerId": {"$oid": "66cc67443921db64869bcf4a"},
+        "rating": 4.8,
+        "comment": "Excellent for gaming, very responsive keys.",
+        "date": "2023-03-22T17:00:00Z"
+      }
+    ]
+  },
+  {
+    "_id": {"$oid": "66cc68309ff045b1b411b6bf"},
+    "productName": "Smartwatch",
+    "category": "Wearables",
+    "price": 199.99,
+    "stock": 60,
+    "description": "Smartwatch with heart rate monitor, GPS, and customizable watch faces.",
+    "brand": "TimeMaster",
+    "images": [
+      {
+        "url": "https://example.com/images/smartwatch_1.jpg",
+        "altText": "Smartwatch"
+      }
+    ],
+    "features": "Heart rate monitor, Built-in GPS, Customizable watch faces",
+    "reviews": [
+      {
+        "customerId": {"$oid": "66cc67443921db64869bcf4b"},
+        "rating": 4.6,
+        "comment": "Great features and battery life.",
+        "date": "2023-03-25T08:30:00Z"
+      }
+    ]
+  },
+  {
+    "_id": {"$oid": "66cc68309ff045b1b411b6c0"},
+    "productName": "Portable Bluetooth Speaker",
+    "category": "Electronics",
+    "price": 39.99,
+    "stock": 120,
+    "description": "Waterproof portable Bluetooth speaker with 10 hours of playtime.",
+    "brand": "SoundBlast",
+    "images": [
+      {
+        "url": "https://example.com/images/bluetooth_speaker_1.jpg",
+        "altText": "Portable Bluetooth Speaker"
+      }
+    ],
+    "features": "Waterproof (IPX7), 10-hour battery life, Built-in microphone",
+    "reviews": [
+      {
+        "customerId": {"$oid": "66cc67443921db64869bcf4c"},
+        "rating": 4.2,
+        "comment": "Perfect for outdoor use!",
+        "date": "2023-03-28T09:45:00Z"
+      }
+    ]
+  },
+  {
+    "_id": {"$oid": "66cc68309ff045b1b411b6c1"},
+    "productName": "Fitness Tracker",
+    "category": "Wearables",
+    "price": 49.99,
+    "stock": 85,
+    "description": "Fitness tracker with step counter, sleep monitor, and calorie tracking.",
+    "brand": "FitLife",
+    "images": [
+      {
+        "url": "https://example.com/images/fitness_tracker_1.jpg",
+        "altText": "Fitness Tracker"
+      }
+    ],
+    "features": "Step counter, Sleep monitoring, Calorie tracking",
+    "reviews": [
+      {
+        "customerId": {"$oid": "66cc67443921db64869bcf4a"},
+        "rating": 4.3,
+        "comment": "Helps me stay on track with my fitness goals.",
+        "date": "2023-04-01T11:10:00Z"
+      }
+    ]
+  },
+  {
+    "_id": {"$oid": "66cc68309ff045b1b411b6c2"},
+    "productName": "Laptop Sleeve",
+    "category": "Accessories",
+    "price": 25.99,
+    "stock": 90,
+    "description": "Durable and water-resistant laptop sleeve, fits up to 15-inch laptops.",
+    "brand": "ProtectGear",
+    "images": [
+      {
+        "url": "https://example.com/images/laptop_sleeve_1.jpg",
+        "altText": "Laptop Sleeve"
+      }
+    ],
+    "features": "Water-resistant, Padded for extra protection, Slim and lightweight",
+    "reviews": [
+      {
+        "customerId": {"$oid": "66cc67443921db64869bcf4b"},
+        "rating": 4.5,
+        "comment": "Great protection for my laptop.",
+        "date": "2023-04-03T12:20:00Z"
+      }
+    ]
+  },
+  {
+    "_id": {"$oid": "66cc68309ff045b1b411b6c3"},
+    "productName": "Wireless Charger",
+    "category": "Accessories",
+    "price": 19.99,
+    "stock": 130,
+    "description": "Fast wireless charger compatible with all Qi-enabled devices.",
+    "brand": "ChargePlus",
+    "images": [
+      {
+        "url": "https://example.com/images/wireless_charger_1.jpg",
+        "altText": "Wireless Charger"
+      }
+    ],
+    "features": "10W fast charging, Compact design, LED indicator",
+    "reviews": [
+      {
+        "customerId": {"$oid": "66cc67443921db64869bcf4c"},
+        "rating": 4.4,
+        "comment": "Charges my phone quickly and efficiently.",
+        "date": "2023-04-05T14:00:00Z"
+      }
+    ]
+  }
+]

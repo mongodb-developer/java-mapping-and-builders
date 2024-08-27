@@ -111,6 +111,7 @@ public class Product {
     public void setReviews(List<Reviews> reviews) {
         this.reviews = reviews;
     }
+
     @Override
     public String toString() {
         return "Product{" +
@@ -126,6 +127,16 @@ public class Product {
                 ", reviews=" + reviews +
                 '}';
     }
+    public String toProductDetails() {
+        return "Product{" +
+                "productName='" + productName + '\'' +
+                ", category='" + category + '\'' +
+                ", price='" + price + '\'' +
+                ", brand='" + brand + '\'' +
+                ", stock=" + stock +
+                '}';
+    }
+
 
 }
 

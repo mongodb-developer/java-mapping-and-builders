@@ -7,7 +7,9 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.AggregateIterable;
-import org.bson.Document;
+import com.mongodb.client.model.Indexes;
+import com.mongodb.client.model.Sorts;
+import com.mongodb.client.model.Updates;
 import org.bson.codecs.configuration.CodecRegistry;
 import org.bson.codecs.pojo.PojoCodecProvider;
 import org.example.model.Product;
@@ -18,7 +20,6 @@ import static com.mongodb.client.model.Aggregates.*;
 import static com.mongodb.client.model.Accumulators.*;
 import static com.mongodb.client.model.Filters.*;
 import static com.mongodb.client.model.Projections.*;
-import static com.mongodb.client.model.Sorts.*;
 import static org.bson.codecs.configuration.CodecRegistries.fromProviders;
 import static org.bson.codecs.configuration.CodecRegistries.fromRegistries;
 
@@ -37,15 +38,14 @@ public class AggregationBuilders {
             MongoCollection<Product> collection = database.getCollection("productDetails", Product.class);
 
             runAverageRatingPipeline(collection);
+            updateLowStockProducts(collection);
         }
     }
 
     // Show top 3 highest rated products details
     private static void runAverageRatingPipeline(MongoCollection<Product> collection) {
         AggregateIterable<Product> result = collection.aggregate(Arrays.asList(
-                //  Unwind the reviews array
                 unwind("$reviews"),
-
                 group("$_id",
                         avg("averageRating", "$reviews.rating"),
                         first("productName", "$productName"),
@@ -54,9 +54,8 @@ public class AggregationBuilders {
                         first("brand", "$brand"),
                         first("stock", "$stock")
                 ),
-
                 match(gte("averageRating", 4.5)),
-
+                sort(Sorts.descending("averageRating")),
                 project(fields(
                         excludeId(),
                         include("productName", "category", "price", "brand", "stock")
@@ -70,4 +69,15 @@ public class AggregationBuilders {
             System.out.println(doc.toProductDetails());
         }
     }
+
+
+    // Update stock for products that have less than 50 units in stock using Update Builders.
+    private static void updateLowStockProducts(MongoCollection<Product> collection) {
+        collection.updateMany(
+                lt("stock", 50),
+                Updates.inc("stock", 20)
+        );
+        System.out.println("Update: Increased stock for products with less than 50 units.");
+    }
+
 }
